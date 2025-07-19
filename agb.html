@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Allgemeine Geschäftsbedingungen von Weinbau Gregor Stiegelmar.">
+    <title>AGB - Weinbau Gregor Stiegelmar</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        if(localStorage.getItem('constentMode') === null){
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'personalization_storage': 'denied',
+                'functionality_storage': 'denied',
+                'security_storage': 'denied',
+            })
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')))
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-579ZL4R4');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+
+<!-- IMPORTANT: Paste your GTM <noscript> tag here, immediately after <body> -->
+
+<main>
+    <div class="rebblatt-container">
+        <img class="rebblatt top-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt top-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+    <section id="legal-content" class="content">
+        <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
+        <p>Dies ist ein Platzhalter für die Allgemeinen Geschäftsbedingungen von Weinbau Gregor Stiegelmar. Bitte füllen Sie diesen Bereich mit Ihren rechtlich bindenden AGB aus.</p>
+        <p>Hier könnten Abschnitte zu Lieferbedingungen, Zahlungsmodalitäten, Widerrufsrecht, Gewährleistung und anderen wichtigen Bestimmungen folgen.</p>
+        <p>Für detaillierte und rechtssichere AGB konsultieren Sie bitte einen Rechtsberater.</p>
+    </section>
+    <div class="rebblatt-container">
+        <img class="rebblatt bottom-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt bottom-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="agb.html">AGB</a>
+        </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2025</span> Weinbau Gregor Stiegelmar. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    // Dynamically update the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

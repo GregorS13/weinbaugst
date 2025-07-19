@@ -1,0 +1,404 @@
+@font-face {
+    font-family: 'Buchfraktur'; /* This is the name you'll use in your CSS */
+    src: url('assets/fonts/Buchfraktur-Regular.otf') format('opentype');
+    font-weight: normal; /* Define the weight if this is the regular variant */
+    font-style: normal;  /* Define the style if this is the normal variant */
+    font-display: swap;  /* IMPORTANT for performance and user experience */
+}
+
+/* Basic Resets & Global Styles */
+:root {
+    --text-dark: #222;
+    --text-light: #f8f8f8;
+    --bg-light: #F8F8F8;
+    --font-body: 'Buchfraktur';
+    --font-footer: 'Lato';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: var(--font-body), serif;
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    overflow-x: hidden; /* Prevent horizontal scroll from layout issues */
+}
+
+html, body {
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+h1 {
+    color: var(--text-dark);
+    font-size: 2em;
+    line-height: 1.2;
+    margin-bottom: 2em;
+    font-weight: normal;
+}
+
+/* Sections */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    align-items: center;
+
+}
+
+
+main section {
+    text-align: center;
+    position: relative;
+}
+
+main p {
+    font-size: 1.5em;
+}
+
+.subtitle {
+    margin-bottom: 6em;
+    letter-spacing: 0.45em;
+}
+
+.location {
+    letter-spacing: 1.3em;
+}
+
+.reben {
+    width: 500px;
+    height: auto;
+    /* Slight rotation */
+    transform: rotate(-4deg) translate(-47%, -215%); /* Rotates 3 degrees counter-clockwise */;
+    position: absolute;
+    top: 50%; /* Start roughly in the middle of the #main.content area */
+    left: 50%; /* Start roughly in the middle of the #main.content area */
+}
+
+
+.rebblatt {
+    width: 60px;
+    height: auto;
+    margin: 2rem;
+}
+
+.rebblatt-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.top-left {
+    transform: rotate(90deg);
+}
+
+.top-right {
+    transform: rotate(-180deg);
+}
+
+.bottom-left {
+
+}
+.bottom-right {
+    transform: rotate(-90deg);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-light);
+    font-family: var(--font-footer);
+    color: var(--text-dark);
+    padding-bottom: 1em;
+    text-align: center;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.footer-links {
+    flex-basis: 100%; /* Full width on small screens */
+}
+
+.footer-links a {
+    color: var(--text-dark);
+    margin: 0 1em;
+    white-space: nowrap; /* Prevent wrapping for individual links */
+    font-size: 1.05em;
+}
+
+.footer-links a:hover {
+    color: black;
+}
+
+.copyright {
+    color: var(--text-dark);
+}
+
+.content {
+    font-family: var(--font-footer);
+    padding: 0 8em;
+    text-align: left;
+}
+
+.content h1{
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.content p {
+    font-size: 1em;
+    margin-bottom: 0.5em;
+}
+
+@media screen and (max-width: 1400px) {
+    h1 {
+        font-size: 2em;
+        margin-bottom: 2em;
+    }
+
+    main p {
+        font-size: 1.5em;
+    }
+
+    .subtitle {
+        margin-bottom: 6.5em;
+        letter-spacing: 0.3em;
+    }
+
+    .location {
+        letter-spacing: 1em;
+    }
+
+    .reben {
+        width: 400px;
+        transform: rotate(-4deg) translate(-47%, -225%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 50px;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 2em;
+    }
+
+    main p {
+        font-size: 1.3em;
+    }
+
+    .subtitle {
+        margin-bottom: 6.5em;
+        letter-spacing: 0.3em;
+    }
+
+    .location {
+        letter-spacing: 1em;
+    }
+
+    .reben {
+        width: 350px;
+        transform: rotate(-4deg) translate(-47%, -220%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 40px;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 2em;
+    }
+
+    main p {
+        font-size: 1.1em;
+    }
+
+    .subtitle {
+        margin-bottom: 6.5em;
+        letter-spacing: 0.3em;
+    }
+
+    .location {
+        letter-spacing: 1em;
+    }
+
+    .reben {
+        width: 300px;
+        transform: rotate(-4deg) translate(-47%, -220%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 40px;
+        margin: 2rem;
+    }
+
+    footer{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 2em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        margin-bottom: 6em;
+        letter-spacing: 0.25em;
+    }
+
+    .location {
+        letter-spacing: 0.9em;
+    }
+
+    .reben {
+        width: 240px;
+        transform: rotate(-4deg) translate(-47%, -220%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 35px;
+        margin: 2rem;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+
+    .content {
+        font-family: var(--font-footer);
+        padding: 0 4em;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+    }
+
+    main p {
+        font-size: 1em;
+    }
+
+    .subtitle {
+        margin-bottom: 3em;
+        letter-spacing: 0.15em;
+    }
+
+    .location {
+        letter-spacing: 0.6em;
+    }
+
+    .reben {
+        width: 230px;
+        transform: rotate(-4deg) translate(-47%, -190%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 30px;
+        margin: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.4em;
+        margin-bottom: 0.5em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
+
+    .subtitle {
+        margin-bottom: 2.5em;
+        letter-spacing: 0.18em;
+    }
+
+    .location {
+        letter-spacing: 0.6em;
+    }
+
+    .reben {
+        width: 220px;
+        transform: rotate(-4deg) translate(-47%, -170%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 30px;
+        margin: 2rem;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    h1 {
+        font-size: 1.3em;
+        margin-bottom: 0.5em;
+    }
+
+    main p {
+        font-size: 0.8em;
+    }
+
+    .subtitle {
+        margin-bottom: 2em;
+        letter-spacing: 0.18em;
+    }
+
+    .location {
+        letter-spacing: 0.6em;
+    }
+
+    .reben {
+        width: 200px;
+        transform: rotate(-4deg) translate(-47%, -170%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 30px;
+        margin: 2rem;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+}
+

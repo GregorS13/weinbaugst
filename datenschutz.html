@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datenschutzerklärung von Weinbau Gregor Stiegelmar. Informationen zur Erhebung, Verarbeitung und Nutzung personenbezogener Daten.">
+    <title>Datenschutzerklärung - Weinbau Gregor Stiegelmar</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        if(localStorage.getItem('constentMode') === null){
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'personalization_storage': 'denied',
+                'functionality_storage': 'denied',
+                'security_storage': 'denied',
+            })
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')))
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-579ZL4R4');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+
+<!-- IMPORTANT: Paste your GTM <noscript> tag here, immediately after <body> -->
+
+<main>
+    <div class="rebblatt-container">
+        <img class="rebblatt top-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt top-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+    <section id="legal-content" class="content">
+        <h1>Datenschutzerklärung</h1>
+        <p>Dies ist ein Platzhalter für die Datenschutzerklärung von Weinbau Gregor Stiegelmar. Bitte füllen Sie diesen Bereich mit allen erforderlichen Informationen zur Verarbeitung personenbezogener Daten aus.</p>
+        <p>Hier sollten Abschnitte zu folgenden Themen enthalten sein:</p>
+        <ul>
+            <li>Name und Kontaktdaten des Verantwortlichen</li>
+            <li>Zwecke der Datenverarbeitung (z.B. Website-Bereitstellung, Kontaktaufnahme, Analyse)</li>
+            <li>Rechtsgrundlagen der Verarbeitung (z.B. Einwilligung, Vertragserfüllung, berechtigtes Interesse)</li>
+            <li>Kategorien personenbezogener Daten (z.B. IP-Adresse, Nutzungsdaten, Kontaktdaten)</li>
+            <li>Empfänger oder Kategorien von Empfängern der personenbezogenen Daten (z.B. Hosting-Anbieter, Google Analytics)</li>
+            <li>Übermittlung von Daten in Drittländer (z.B. USA bei Google Analytics)</li>
+            <li>Speicherdauer der personenbezogenen Daten</li>
+            <li>Ihre Rechte als betroffene Person (Auskunft, Berichtigung, Löschung, Einschränkung, Widerspruch, Datenübertragbarkeit, Beschwerderecht)</li>
+            <li>Widerrufsrecht bei Einwilligung</li>
+            <li>Informationen zu Cookies und ähnlichen Technologien</li>
+            <li>Logfiles</li>
+            <li>Ihre Kontaktmöglichkeiten für Datenschutzanfragen</li>
+        </ul>
+        <p>Für eine vollständige und rechtssichere Datenschutzerklärung, die alle relevanten Aspekte Ihrer Website und Datenverarbeitung abdeckt, konsultieren Sie bitte einen auf Datenschutzrecht spezialisierten Rechtsberater oder nutzen Sie einen professionellen Datenschutz-Generator.</p>
+    </section>
+    <div class="rebblatt-container">
+        <img class="rebblatt bottom-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt bottom-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="agb.html">AGB</a>
+        </div>
+    </div>
+    <p class="copyright">&copy; <span id="year">2025</span> Weinbau Gregor Stiegelmar. Alle Rechte vorbehalten.</p>
+</footer>
+
+<script>
+    // Dynamically update the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

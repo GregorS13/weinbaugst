@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weinbau Gregor Stiegelmar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@3.1.0/dist/cookieconsent.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        if(localStorage.getItem('constentMode') === null){
+            gtag('consent', 'default', {
+                'ad_storage': 'denied',
+                'analytics_storage': 'denied',
+                'personalization_storage': 'denied',
+                'functionality_storage': 'denied',
+                'security_storage': 'denied',
+            })
+        } else {
+            gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')))
+        }
+    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-579ZL4R4');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-579ZL4R4"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<main>
+    <div class="rebblatt-container">
+        <img class="rebblatt top-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt top-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+
+    <section>
+        <img class="reben" src="assets/reben.svg" alt="Logo">
+        <h1>Weinbau </br> Gregor Stiegelmar</h1>
+        <p id="subtitle" class="subtitle">Ich keltere Gemischte Sätze in Gols.</p>
+        <p id="location" class="location">47°53'47.0"N 16°55'09.6"E</p>
+    </section>
+    <div class="rebblatt-container">
+        <img class="rebblatt bottom-left" src="assets/rebblatt.svg" alt="Rebblatt">
+        <img class="rebblatt bottom-right" src="assets/rebblatt.svg" alt="Rebblatt">
+    </div>
+</main>
+
+<!--<footer>-->
+<!--    <div class="footer-content">-->
+<!--        <div class="footer-links">-->
+<!--            <a href="index.html">Home</a>-->
+<!--            <a href="impressum.html">Impressum</a>-->
+<!--            <a href="datenschutz.html">Datenschutzerklärung</a>-->
+<!--            <a href="agb.html">AGB</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <p class="copyright">&copy; <span id="year">2025</span> Weinbau Gregor Stiegelmar. Alle Rechte Vorbehalten.</p>-->
+<!--</footer>-->
+<script>
+    // Dynamically update the copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script type="module" src="cookieconsent-config.js"></script>
+
+</body>
+</html>
