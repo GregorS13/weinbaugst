@@ -46,6 +46,7 @@ h1 {
     line-height: 1.2;
     margin-bottom: 2em;
     font-weight: normal;
+    padding-top: 2em;
 }
 
 /* Sections */
@@ -70,18 +71,18 @@ main p {
 
 .subtitle {
     margin-bottom: 6em;
-    letter-spacing: 0.45em;
+    letter-spacing: 0.4em;
 }
 
 .location {
-    letter-spacing: 1.3em;
+    letter-spacing: 1.1em;
 }
 
 .reben {
-    width: 500px;
+    width: 450px;
     height: auto;
     /* Slight rotation */
-    transform: rotate(-4deg) translate(-47%, -215%); /* Rotates 3 degrees counter-clockwise */;
+    transform: rotate(-4deg) translate(-47%, -190%); /* Rotates 3 degrees counter-clockwise */;
     position: absolute;
     top: 50%; /* Start roughly in the middle of the #main.content area */
     left: 50%; /* Start roughly in the middle of the #main.content area */
@@ -191,7 +192,7 @@ footer {
 
     .reben {
         width: 400px;
-        transform: rotate(-4deg) translate(-47%, -225%); /* Rotates 3 degrees counter-clockwise */;
+        transform: rotate(-4deg) translate(-47%, -210%); /* Rotates 3 degrees counter-clockwise */;
     }
 
     .rebblatt {
@@ -221,7 +222,7 @@ footer {
 
     .reben {
         width: 350px;
-        transform: rotate(-4deg) translate(-47%, -220%); /* Rotates 3 degrees counter-clockwise */;
+        transform: rotate(-4deg) translate(-47%, -210%); /* Rotates 3 degrees counter-clockwise */;
     }
 
     .rebblatt {
