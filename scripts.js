@@ -59,26 +59,13 @@ async function loadAndApplyLanguage(lang) {
     const langData = await fetchLanguageData(lang);
     if (Object.keys(langData).length > 0) { // Only apply if data was loaded successfully
         applyTranslations(langData);
-        // Save user preference to localStorage (optional, but good for returning visitors)
-        localStorage.setItem('preferredLang', lang);
     }
 }
 
 // --- Initialization ---
 document.addEventListener('DOMContentLoaded', async () => {
-    let currentLang = localStorage.getItem('preferredLang');
-
-    if (!currentLang) {
-        currentLang = getBrowserLanguage();
-    }
+    const currentLang = getBrowserLanguage();
 
     await loadAndApplyLanguage(currentLang);
 
-    // Add event listeners for language switcher buttons
-    document.querySelectorAll('.language-switcher button').forEach(button => {
-        button.addEventListener('click', async (event) => {
-            const newLang = event.target.dataset.lang;
-            await loadAndApplyLanguage(newLang);
-        });
-    });
 });
