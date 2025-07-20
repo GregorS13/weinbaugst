@@ -402,3 +402,37 @@ footer {
     }
 }
 
+@media screen and (max-width: 375px) {
+    h1 {
+        font-size: 1.1em;
+        margin-bottom: 0.5em;
+    }
+
+    main p {
+        font-size: 0.7em;
+    }
+
+    .subtitle {
+        margin-bottom: 2em;
+        letter-spacing: 0.15em;
+    }
+
+    .location {
+        letter-spacing: 0.45em;
+    }
+
+    .reben {
+        width: 200px;
+        transform: rotate(-4deg) translate(-47%, -150%); /* Rotates 3 degrees counter-clockwise */;
+    }
+
+    .rebblatt {
+        width: 30px;
+        margin: 2rem;
+    }
+
+    footer{
+        font-size: 0.6em;
+    }
+}
+
