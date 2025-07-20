@@ -9,8 +9,7 @@
 /* Basic Resets & Global Styles */
 :root {
     --text-dark: #222;
-    --text-light: #f8f8f8;
-    --bg-light: #F8F8F8;
+    --bg-light: #FFFFFD;
     --font-body: 'Buchfraktur';
     --font-footer: 'Lato';
 }

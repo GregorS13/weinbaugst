@@ -35,11 +35,12 @@ CookieConsent.run({
 
     language: {
         default: 'en',
+        autoDetect: 'browser',
         translations: {
             en: {
                 consentModal: {
                     title: 'We use cookies',
-                    description: 'For any queries in relation to our policy on cookies and your choices, please <a href="impressum.html">contact us</a>',
+                    description: 'For any queries in relation to our policy on cookies and your choices, please refer to our <a href="datenschutz.html">Cookie Policy</a>',
                     acceptAllBtn: 'Accept all',
                     acceptNecessaryBtn: 'Reject all',
                     showPreferencesBtn: 'Manage Individual preferences'
@@ -58,7 +59,34 @@ CookieConsent.run({
                         },
                         {
                             title: 'More information',
-                            description: 'For any queries in relation to our policy on cookies and your choices, please <a href="impressum.html">contact us</a>'
+                            description: 'For any queries in relation to our policy on cookies and your choices, please refer to our <a href="datenschutz.html">Cookie Policy</a>',
+                        }
+                    ]
+                }
+            },
+            de: {
+                consentModal: {
+                    title: 'Wir verwenden Cookies',
+                    description: 'Weitere information finden Sie unter unserer <a href="datenschutz.html">Cookie-Richtlinie</a>',
+                    acceptAllBtn: 'Alle akzeptieren',
+                    acceptNecessaryBtn: 'Nur notwendige akzeptieren',
+                    showPreferencesBtn: 'Cookie-Einstellungen verwalten'
+                },
+                preferencesModal: {
+                    title: 'Cookie-Einstellungen verwalten',
+                    acceptAllBtn: 'Alle akzeptieren',
+                    acceptNecessaryBtn: 'Nur notwendige akzeptieren',
+                    savePreferencesBtn: 'Aktuelle Auswahl akzeptieren',
+                    closeIconLabel: 'Schließen',
+                    sections: [
+                        {
+                            title: 'Leistungs- und Analyse-Cookies',
+                            description: 'Diese Cookies sammeln Informationen darüber, wie Sie unsere Website nutzen. Alle Daten sind anonymisiert und können nicht verwendet werden, um Sie zu identifizieren.',
+                            linkedCategory: 'analytics'
+                        },
+                        {
+                            title: 'Weitere Informationen',
+                            description: 'Weitere information finden Sie unter unserer <a href="datenschutz.html">Cookie-Richtlinie</a>',
                         }
                     ]
                 }

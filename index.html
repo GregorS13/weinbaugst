@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,20 +28,15 @@
             gtag('consent', 'default', JSON.parse(localStorage.getItem('consentMode')))
         }
     </script>
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-579ZL4R4');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N3T7LBT1F9"></script>
+    <script>
+        gtag('js', new Date());
+
+        gtag('config', 'G-N3T7LBT1F9');
+    </script>
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-579ZL4R4"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
 <main>
     <div class="rebblatt-container">
         <img class="rebblatt top-left" src="assets/rebblatt.svg" alt="Rebblatt">
@@ -50,8 +45,8 @@
 
     <section>
         <img class="reben" src="assets/reben.svg" alt="Logo">
-        <h1>Weinbau </br> Gregor Stiegelmar</h1>
-        <p id="subtitle" class="subtitle">Ich keltere Gemischte Sätze in Gols.</p>
+        <h1>Weinbau <br/> Gregor Stiegelmar</h1>
+        <p id="subtitle" class="subtitle" data-i18n="subtitle">Ich keltere Gemischte Sätze in Gols.</p>
         <p id="location" class="location">47°53'47.0"N 16°55'09.6"E</p>
     </section>
     <div class="rebblatt-container">
@@ -59,23 +54,8 @@
         <img class="rebblatt bottom-right" src="assets/rebblatt.svg" alt="Rebblatt">
     </div>
 </main>
-
-<!--<footer>-->
-<!--    <div class="footer-content">-->
-<!--        <div class="footer-links">-->
-<!--            <a href="index.html">Home</a>-->
-<!--            <a href="impressum.html">Impressum</a>-->
-<!--            <a href="datenschutz.html">Datenschutzerklärung</a>-->
-<!--            <a href="agb.html">AGB</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <p class="copyright">&copy; <span id="year">2025</span> Weinbau Gregor Stiegelmar. Alle Rechte Vorbehalten.</p>-->
-<!--</footer>-->
-<script>
-    // Dynamically update the copyright year
-    document.getElementById('year').textContent = new Date().getFullYear();
-</script>
 <script type="module" src="cookieconsent-config.js"></script>
+<script src="scripts.js"></script>
 
 </body>
 </html>
